@@ -1,4 +1,12 @@
-/** @type {import('next').NextConfig} */
+// @ts-check
+
+// Clerk configuration is handled via environment variables and middleware, no need to import withClerkConfig or export withClerkMiddleware/getAuth here.
+// Next.js configuration is done here, including images and other settings.
+// You can add more configurations as needed.
+
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
     images: {
         remotePatterns: [
@@ -12,6 +20,9 @@ const nextConfig = {
             },
         ],
     },
-}
+};
+
+// If you encounter issues with .mjs, rename this file to next.config.js and use:
+// module.exports = nextConfig;
 
 export default nextConfig;
