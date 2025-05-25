@@ -5,10 +5,6 @@ const nextConfig = {
   },
   images: {
     domains: ['images.clerk.dev', 'uploadcare.com', 'ucarecdn.com'],
-  },
-  // Disable HTTPS in development
-  devServer: {
-    https: false
   }
 };
 
